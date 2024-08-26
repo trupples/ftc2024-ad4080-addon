@@ -1332,7 +1332,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_02x02_Odd_Even"
+		(symbol "Connector_Generic:Conn_02x01"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -1346,8 +1346,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x02_Odd_Even"
-				(at 1.27 -5.08 0)
+			(property "Value" "Conn_02x01"
+				(at 1.27 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1372,7 +1372,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1399,18 +1399,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x02_Odd_Even_1_1"
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Conn_02x01_1_1"
 				(rectangle
 					(start -1.27 0.127)
 					(end 0 -0.127)
@@ -1424,24 +1413,13 @@
 				)
 				(rectangle
 					(start -1.27 1.27)
-					(end 3.81 -3.81)
+					(end 3.81 -1.27)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start 3.81 -2.413)
-					(end 2.54 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(rectangle
@@ -1484,42 +1462,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3687,12 +3629,6 @@
 		(uuid "297f2f32-320b-49e7-ba7a-d9dafb12a365")
 	)
 	(junction
-		(at 17.78 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43b37ba8-431d-4fbc-adcf-a5a1d7bbd041")
-	)
-	(junction
 		(at 49.53 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3841,6 +3777,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db0823da-8030-41d9-b40c-9451c6760b8c")
+	)
+	(junction
+		(at 17.78 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec20c7f6-1597-4280-a658-33daa940ea6f")
 	)
 	(junction
 		(at 41.91 54.61)
@@ -4446,6 +4388,16 @@
 	)
 	(wire
 		(pts
+			(xy 17.78 77.47) (xy 17.78 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44627d4b-6a5b-445f-89e0-8b4ed096c9fd")
+	)
+	(wire
+		(pts
 			(xy 62.23 120.65) (xy 57.15 120.65)
 		)
 		(stroke
@@ -4713,16 +4665,6 @@
 			(type default)
 		)
 		(uuid "66369a89-03d1-4106-8426-ea5680450c41")
-	)
-	(wire
-		(pts
-			(xy 17.78 77.47) (xy 17.78 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6694b6ab-b8d9-4fdf-a0d0-869d48843473")
 	)
 	(wire
 		(pts
@@ -6792,7 +6734,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18c45742-fe68-4188-a291-f7a61c5c5d77")
-		(property "Reference" "J4"
+		(property "Reference" "J1"
 			(at 238.76 48.5531 0)
 			(effects
 				(font
@@ -6846,7 +6788,7 @@
 		(instances
 			(project "ad4080_evb_experimenter"
 				(path "/b69282a1-dfbe-4b32-8ce1-82537d42439c"
-					(reference "J4")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -7757,6 +7699,74 @@
 			(project "ad4080_evb_experimenter"
 				(path "/b69282a1-dfbe-4b32-8ce1-82537d42439c"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x01")
+		(at 22.86 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3086b3da-07c3-460f-be15-4b7dcc825ae0")
+		(property "Reference" "J4"
+			(at 24.13 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x01"
+			(at 26.67 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 22.86 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "81465f67-ccfe-4941-b770-747ebb4b1cbf")
+		)
+		(pin "1"
+			(uuid "cade4b8f-bae0-46e8-9e30-0b681e7e8970")
+		)
+		(instances
+			(project "ad4080_evb_experimenter"
+				(path "/b69282a1-dfbe-4b32-8ce1-82537d42439c"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -10070,7 +10080,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9268140a-a0cd-4b82-af96-2568eaed6f9a")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 25.4 31.75 0)
 			(effects
 				(font
@@ -10125,7 +10135,7 @@
 		(instances
 			(project "ad4080_evb_experimenter"
 				(path "/b69282a1-dfbe-4b32-8ce1-82537d42439c"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -10397,80 +10407,6 @@
 			(project "ad4080_evb_experimenter"
 				(path "/b69282a1-dfbe-4b32-8ce1-82537d42439c"
 					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
-		(at 22.86 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "96504e40-fe90-41f7-af25-8c42e74e3275")
-		(property "Reference" "J3"
-			(at 24.13 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_02x02_Odd_Even"
-			(at 24.13 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
-			(at 22.86 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 22.86 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 22.86 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "5eb2c564-5b09-42cb-8c5b-b37702916bd0")
-		)
-		(pin "3"
-			(uuid "4c2029ab-06f4-4dcd-88e1-fc3227d1d1e8")
-		)
-		(pin "1"
-			(uuid "b0f7076d-7be3-4cad-b415-af05b711a9ff")
-		)
-		(pin "2"
-			(uuid "8eb7f7a8-f635-4ea2-b628-bde68ff1bc93")
-		)
-		(instances
-			(project "ad4080_evb_experimenter"
-				(path "/b69282a1-dfbe-4b32-8ce1-82537d42439c"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -10798,6 +10734,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x01")
+		(at 22.86 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa2b9c6e-8f8b-4770-b5db-efdf6eeeeb4c")
+		(property "Reference" "J6"
+			(at 24.13 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x01"
+			(at 27.94 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 22.86 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7a15409a-2bed-4094-9bfd-fec08c0c3707")
+		)
+		(pin "1"
+			(uuid "791d1eb8-7cfc-4ef9-adf0-499e4ff2588e")
+		)
+		(instances
+			(project "ad4080_evb_experimenter"
+				(path "/b69282a1-dfbe-4b32-8ce1-82537d42439c"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 256.54 93.98 180)
 		(unit 1)
@@ -11048,7 +11052,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bcbe563a-8668-4243-8df5-8b2f32cddbea")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 24.13 49.53 0)
 			(effects
 				(font
@@ -11104,7 +11108,7 @@
 		(instances
 			(project "ad4080_evb_experimenter"
 				(path "/b69282a1-dfbe-4b32-8ce1-82537d42439c"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -11670,22 +11674,22 @@
 			)
 		)
 		(pin "2"
-			(uuid "27be08aa-10f6-4137-9db9-f666a72c2e6d")
+			(uuid "27be08aa-10f6-4137-9db9-f666a72c2e6e")
 		)
 		(pin "1"
-			(uuid "a5bf81db-606f-4991-8da8-f78db9af4033")
+			(uuid "a5bf81db-606f-4991-8da8-f78db9af4034")
 		)
 		(pin "5"
-			(uuid "f484f10a-eca1-4925-b890-49003197ab1d")
+			(uuid "f484f10a-eca1-4925-b890-49003197ab1e")
 		)
 		(pin "6"
-			(uuid "25d0d230-0263-4b02-bf02-fdb5d092228c")
+			(uuid "25d0d230-0263-4b02-bf02-fdb5d092228d")
 		)
 		(pin "3"
-			(uuid "cb8ab7e9-86f9-43e1-a40a-e941596dcdb2")
+			(uuid "cb8ab7e9-86f9-43e1-a40a-e941596dcdb3")
 		)
 		(pin "4"
-			(uuid "07f63bd8-7160-4b3c-8ab7-73f6f84822ba")
+			(uuid "07f63bd8-7160-4b3c-8ab7-73f6f84822bb")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
@@ -12092,22 +12096,22 @@
 			)
 		)
 		(pin "2"
-			(uuid "27be08aa-10f6-4137-9db9-f666a72c2e6d")
+			(uuid "27be08aa-10f6-4137-9db9-f666a72c2e6f")
 		)
 		(pin "1"
-			(uuid "a5bf81db-606f-4991-8da8-f78db9af4033")
+			(uuid "a5bf81db-606f-4991-8da8-f78db9af4035")
 		)
 		(pin "5"
-			(uuid "f484f10a-eca1-4925-b890-49003197ab1d")
+			(uuid "f484f10a-eca1-4925-b890-49003197ab1f")
 		)
 		(pin "6"
-			(uuid "25d0d230-0263-4b02-bf02-fdb5d092228c")
+			(uuid "25d0d230-0263-4b02-bf02-fdb5d092228e")
 		)
 		(pin "3"
-			(uuid "cb8ab7e9-86f9-43e1-a40a-e941596dcdb2")
+			(uuid "cb8ab7e9-86f9-43e1-a40a-e941596dcdb4")
 		)
 		(pin "4"
-			(uuid "07f63bd8-7160-4b3c-8ab7-73f6f84822ba")
+			(uuid "07f63bd8-7160-4b3c-8ab7-73f6f84822bc")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
@@ -12240,16 +12244,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "197667b8-2863-43e7-b438-63c32ee3ee6b")
+			(uuid "197667b8-2863-43e7-b438-63c32ee3ee6c")
 		)
 		(pin "4"
-			(uuid "08b02dd9-0612-4d65-b45c-c9c8cac45ae1")
+			(uuid "08b02dd9-0612-4d65-b45c-c9c8cac45ae2")
 		)
 		(pin "1"
-			(uuid "90925e8a-04f0-499e-8e1e-7fa28de5d6bf")
+			(uuid "90925e8a-04f0-499e-8e1e-7fa28de5d6c0")
 		)
 		(pin "2"
-			(uuid "9eabbf66-439d-4d99-b7f8-7df322952478")
+			(uuid "9eabbf66-439d-4d99-b7f8-7df322952479")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
@@ -12485,22 +12489,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "40c060cb-d729-4b2f-b719-3ce60378d995")
+			(uuid "40c060cb-d729-4b2f-b719-3ce60378d996")
 		)
 		(pin "6"
-			(uuid "4e6727dd-708e-4b8f-ab22-db727cca510c")
+			(uuid "4e6727dd-708e-4b8f-ab22-db727cca510d")
 		)
 		(pin "3"
-			(uuid "4ec4df7d-97ba-45a9-bb45-b5099e27b5ca")
+			(uuid "4ec4df7d-97ba-45a9-bb45-b5099e27b5cb")
 		)
 		(pin "4"
-			(uuid "d59f21f7-50bb-49d3-9c97-d7e433cd4a95")
+			(uuid "d59f21f7-50bb-49d3-9c97-d7e433cd4a96")
 		)
 		(pin "2"
-			(uuid "522c2626-d492-4d90-88e5-7d24d7eea934")
+			(uuid "522c2626-d492-4d90-88e5-7d24d7eea935")
 		)
 		(pin "5"
-			(uuid "7e3723a6-9c2f-4aa0-b7f2-83bc25b81745")
+			(uuid "7e3723a6-9c2f-4aa0-b7f2-83bc25b81746")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
@@ -12903,22 +12907,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "40c060cb-d729-4b2f-b719-3ce60378d995")
+			(uuid "40c060cb-d729-4b2f-b719-3ce60378d997")
 		)
 		(pin "6"
-			(uuid "4e6727dd-708e-4b8f-ab22-db727cca510c")
+			(uuid "4e6727dd-708e-4b8f-ab22-db727cca510e")
 		)
 		(pin "3"
-			(uuid "4ec4df7d-97ba-45a9-bb45-b5099e27b5ca")
+			(uuid "4ec4df7d-97ba-45a9-bb45-b5099e27b5cc")
 		)
 		(pin "4"
-			(uuid "d59f21f7-50bb-49d3-9c97-d7e433cd4a95")
+			(uuid "d59f21f7-50bb-49d3-9c97-d7e433cd4a97")
 		)
 		(pin "2"
-			(uuid "522c2626-d492-4d90-88e5-7d24d7eea934")
+			(uuid "522c2626-d492-4d90-88e5-7d24d7eea936")
 		)
 		(pin "5"
-			(uuid "7e3723a6-9c2f-4aa0-b7f2-83bc25b81745")
+			(uuid "7e3723a6-9c2f-4aa0-b7f2-83bc25b81747")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
@@ -13048,22 +13052,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "681952bf-a63c-4ff8-98bd-1372028242de")
+			(uuid "681952bf-a63c-4ff8-98bd-1372028242df")
 		)
 		(pin "1"
-			(uuid "628e2c0a-680c-4204-8a1c-65882ba63733")
+			(uuid "628e2c0a-680c-4204-8a1c-65882ba63734")
 		)
 		(pin "4"
-			(uuid "9188bf3c-b61e-43e2-9b8f-5f89b171743e")
+			(uuid "9188bf3c-b61e-43e2-9b8f-5f89b171743f")
 		)
 		(pin "2"
-			(uuid "e7835e61-89a3-4532-90df-70e8a3e34d83")
+			(uuid "e7835e61-89a3-4532-90df-70e8a3e34d84")
 		)
 		(pin "5"
-			(uuid "9e5845bc-c5e5-4b83-b264-b5c5c20e23e1")
+			(uuid "9e5845bc-c5e5-4b83-b264-b5c5c20e23e2")
 		)
 		(pin "3"
-			(uuid "8e961ab3-addb-48ae-a702-f6ebf60dc751")
+			(uuid "8e961ab3-addb-48ae-a702-f6ebf60dc752")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
@@ -13329,22 +13333,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "681952bf-a63c-4ff8-98bd-1372028242de")
+			(uuid "681952bf-a63c-4ff8-98bd-1372028242e0")
 		)
 		(pin "1"
-			(uuid "628e2c0a-680c-4204-8a1c-65882ba63733")
+			(uuid "628e2c0a-680c-4204-8a1c-65882ba63735")
 		)
 		(pin "4"
-			(uuid "9188bf3c-b61e-43e2-9b8f-5f89b171743e")
+			(uuid "9188bf3c-b61e-43e2-9b8f-5f89b1717440")
 		)
 		(pin "2"
-			(uuid "e7835e61-89a3-4532-90df-70e8a3e34d83")
+			(uuid "e7835e61-89a3-4532-90df-70e8a3e34d85")
 		)
 		(pin "5"
-			(uuid "9e5845bc-c5e5-4b83-b264-b5c5c20e23e1")
+			(uuid "9e5845bc-c5e5-4b83-b264-b5c5c20e23e3")
 		)
 		(pin "3"
-			(uuid "8e961ab3-addb-48ae-a702-f6ebf60dc751")
+			(uuid "8e961ab3-addb-48ae-a702-f6ebf60dc753")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
@@ -13408,16 +13412,16 @@
 			)
 		)
 		(pin "3"
-			(uuid "2c3a166f-8cce-42e8-9ce9-89ae00e0a7d7")
+			(uuid "2c3a166f-8cce-42e8-9ce9-89ae00e0a7d8")
 		)
 		(pin "2"
-			(uuid "96bebbb8-e108-4f7a-b7d8-04ee26528b37")
+			(uuid "96bebbb8-e108-4f7a-b7d8-04ee26528b38")
 		)
 		(pin "4"
-			(uuid "4cbb5f1f-8c9f-45d9-b301-712877a91c31")
+			(uuid "4cbb5f1f-8c9f-45d9-b301-712877a91c32")
 		)
 		(pin "1"
-			(uuid "fe93c438-f0e8-4cbe-b925-fc037a31f405")
+			(uuid "fe93c438-f0e8-4cbe-b925-fc037a31f406")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
