@@ -6749,16 +6749,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 52.07) (xy 179.07 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3474162a-9902-4c2f-8fb3-f42a5a8ef1fd")
-	)
-	(wire
-		(pts
 			(xy 256.54 97.79) (xy 256.54 101.6)
 		)
 		(stroke
@@ -7016,6 +7006,16 @@
 			(type default)
 		)
 		(uuid "4e6284f4-e712-4c24-911d-dce833f2ab14")
+	)
+	(wire
+		(pts
+			(xy 179.07 52.07) (xy 179.07 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e98cc13-1c7b-4f60-bd62-686f3cb5c0fe")
 	)
 	(wire
 		(pts
@@ -12086,16 +12086,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "12a55d85-36f6-48fe-ae42-e5455593556e")
+			(uuid "12a55d85-36f6-48fe-ae42-e5455593556f")
 		)
 		(pin "2"
-			(uuid "ca4bfdf5-b22b-44a5-9a41-0b2a75e2c90b")
+			(uuid "ca4bfdf5-b22b-44a5-9a41-0b2a75e2c90c")
 		)
 		(pin "3"
-			(uuid "a8358e19-4588-47e7-9d41-93b21dd06ddc")
+			(uuid "a8358e19-4588-47e7-9d41-93b21dd06ddd")
 		)
 		(pin "1"
-			(uuid "ed3451d9-7694-4779-b824-f5df1dad682d")
+			(uuid "ed3451d9-7694-4779-b824-f5df1dad682e")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
@@ -14934,25 +14934,25 @@
 			)
 		)
 		(pin "8"
-			(uuid "8d16b2cd-9c27-4f83-b0a7-d5ece0031fe7")
+			(uuid "8d16b2cd-9c27-4f83-b0a7-d5ece0031fe8")
 		)
 		(pin "6"
-			(uuid "633c798b-48e3-4be7-9ff4-6ff42fb4c4b7")
+			(uuid "633c798b-48e3-4be7-9ff4-6ff42fb4c4b8")
 		)
 		(pin "1"
-			(uuid "7eac47d6-4ab4-4e40-9d43-2ad5e37996d2")
+			(uuid "7eac47d6-4ab4-4e40-9d43-2ad5e37996d3")
 		)
 		(pin "4"
-			(uuid "e07d1b69-aa52-4c4d-bb21-5cc6a779a8d4")
+			(uuid "e07d1b69-aa52-4c4d-bb21-5cc6a779a8d5")
 		)
 		(pin "7"
-			(uuid "dbc0cd74-6c73-4b2b-9638-97e37fe18413")
+			(uuid "dbc0cd74-6c73-4b2b-9638-97e37fe18414")
 		)
 		(pin "2"
-			(uuid "647dce77-3f1e-4ae9-92e2-7ddffab74ddd")
+			(uuid "647dce77-3f1e-4ae9-92e2-7ddffab74dde")
 		)
 		(pin "3"
-			(uuid "2cd3b626-3ece-43b0-aab4-db6293f6ac03")
+			(uuid "2cd3b626-3ece-43b0-aab4-db6293f6ac04")
 		)
 		(instances
 			(project "ad4080_evb_experimenter"
