@@ -6298,11 +6298,11 @@
 		(uuid "0eb52292-7714-4a12-a4eb-f1cc8fb8cc71")
 	)
 	(no_connect
-		(at 186.69 43.18)
+		(at 186.69 55.88)
 		(uuid "0f28b130-f11a-43e4-9c64-354a08f08f84")
 	)
 	(no_connect
-		(at 189.23 43.18)
+		(at 189.23 55.88)
 		(uuid "60f636d5-7812-4c30-acb1-5df5be7fc672")
 	)
 	(no_connect
@@ -11882,6 +11882,7 @@
 	(symbol
 		(lib_id "FTC2024:LT1677")
 		(at 184.15 49.53 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11897,7 +11898,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 190.1685 58.42 0)
+			(at 190.1685 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
