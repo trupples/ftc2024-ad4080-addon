@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "FTC2024")(type "KiCad")(uri "${KIPRJMOD}/FTC2024.kicad_sym")(options "")(descr ""))
-)
